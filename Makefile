@@ -18,4 +18,4 @@ $(OUT): $(OBJS)
 
 # Regola per pulire i file generati
 clean:
-	rm -f $(OBJS) $(OUT)
+	rm -f $(OBJS)
