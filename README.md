@@ -1,2 +1,16 @@
 # cpp_startup_template
-Startup template per la creazione di progetti in C++
+
+Questo template contiene un progetto base per creare un menu interattivo in C++.
+
+## Struttura del progetto
+- `main.cpp`: Il punto di ingresso del programma.
+- `include/funzioniMenu.h`: Dichiarazioni della classe `Menu`.
+- `src/funzioniMenu.cpp`: Implementazione della classe `Menu`.
+- `Makefile`: Script per la compilazione del progetto.
+
+## Come compilare ed eseguire
+1. Apri un terminale nella directory del progetto.
+2. Compila il progetto eseguendo:
+   ```bash
+   make
+
