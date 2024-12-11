@@ -1,6 +1,6 @@
 # cpp_startup_template
 
-Questo template contiene un progetto base per creare un menu interattivo in C++.
+Questo template contiene un progetto base per creare un menu interattivo in C++ generico.
 
 ## Struttura del progetto
 - `main.cpp`: Il punto di ingresso del programma.
