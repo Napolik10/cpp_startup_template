@@ -10,7 +10,7 @@ Questo template contiene un progetto base per creare un menu interattivo in C++.
 
 ## Come compilare ed eseguire
 1.Apri un terminale nella directory del progetto.
-2.Compila il progetto eseguendo:
+2. Compila il progetto eseguendo:
    ```bash
    make
    ```
