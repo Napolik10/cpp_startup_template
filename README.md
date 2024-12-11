@@ -15,11 +15,11 @@ Questo template contiene un progetto base per creare un menu interattivo in C++.
    make
    ```
 
-3.Esegui il programma con il comando:
+3. Esegui il programma con il comando:
    ```bash
    ./output
    ```
-4.Elimina i file intermedi generati durante il processo di compilazione con:
+4. Elimina i file intermedi generati durante il processo di compilazione con:
    ```bash
    make clean
    ```
