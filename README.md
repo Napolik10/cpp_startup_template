@@ -13,4 +13,9 @@ Questo template contiene un progetto base per creare un menu interattivo in C++.
 2. Compila il progetto eseguendo:
    ```bash
    make
+   ./menu
+   make clean
+
+
+
 
