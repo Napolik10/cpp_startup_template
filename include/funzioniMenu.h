@@ -1,3 +1,6 @@
+#ifndef MENU_H
+#define MENU_H
+
 #include <iostream>
 #include <string>
 
@@ -22,3 +25,5 @@ class Menu
 		int numeroVoci;				//ATTRIBUTO PER NUMERO VOCI
 		int scelta;					//ATTRIBUTO PER MEMORIZZARE LA SCELTA ESEGUITA
 };
+
+#endif
