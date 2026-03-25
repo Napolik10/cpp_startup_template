@@ -3,9 +3,9 @@
 int main() 
 {
 	Menu m;
-	m.aggiungiVoce("INSERIMENTO");
-	m.aggiungiVoce("STAMPA");
-	m.aggiungiVoce("ESCI");
+	m.aggiungiVoce("INSERISCI STUDENTE");
+	m.aggiungiVoce("STAMPA STUDENTE");
+	m.aggiungiVoce("ESCI DAL PROGRAMMA");
 	
 	do
 	{

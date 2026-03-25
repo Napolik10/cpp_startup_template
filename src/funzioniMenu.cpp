@@ -77,18 +77,18 @@ void Menu::eseguiOperazione()
 			{
 				case 1:
 					   cout<<"SCELTO "<<opzioni[scelta-1]<<endl;
-					   
+					   s.setStudente();
 					   		   
 				break;
 				
 				case 2:
 					
 					   cout<<"SCELTO "<<opzioni[scelta-1]<<endl;
+					   s.stampaStudente();
 					   
 				break;
 				
 				case 3:
-					   cout<<"SCELTO "<<opzioni[scelta-1]<<endl;
 					
 				break;
 				
