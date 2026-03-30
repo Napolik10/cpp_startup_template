@@ -76,27 +76,90 @@ void Menu::eseguiOperazione()
 			switch(scelta)
 			{
 				case 1:
-					   cout<<"SCELTO "<<opzioni[scelta-1]<<endl;
-					   s.setStudente();
+					   for(int i=0; i < MAX; i++)
+					   
+							s[i].setStudente();
+					   
 					   		   
 				break;
 				
 				case 2:
+
+					for(int i = 0; i < MAX; i++)
 					
-					   cout<<"SCELTO "<<opzioni[scelta-1]<<endl;
-					   s.stampaStudente();
+						s[i].stampaStudente();
+					
+					  
 					   
 				break;
 				
 				case 3:
+				{
+					bool ordina = false;
+					for(int i = 0; i < MAX-1 && !ordina; i++)
+					{
+						ordina = false;
+						for(int j = 0; j < MAX - i - 1; j++)
+						{
+							if(s[j].getMatricola() > s[j+1].getMatricola())
+							{
+								swap(&s[j], &s[j+1]);
+								ordina = true;
+							}
+						}
+					}
+					for(int i = 0; i < MAX; i++)
+						s[i].stampaStudente();
 					
+				}	
 				break;
 				
 				case 4:
-				
+				{
+					int matricolaDaTrovare = 0;
+					cout<<endl<<"INSERISCI LA MATRICOLA DA TROVARE: ";
+					matricolaDaTrovare = leggiInt();
+					bool trovato = false;
+					for(int i = 0; i < MAX && !trovato; i++)
+					{
+						if(s[i].getMatricola() == matricolaDaTrovare)
+						{
+							cout<<endl<<"STUDENTE TROVATO: "<<endl;
+							trovato = true;
+						}
+					}
+					if(!trovato)
+						cout<<endl<<"STUDENTE NON TROVATO"<<endl;
+
+				}
 				break;
 				
 				case 5:
+				{
+					int matricolaDaEliminare = 0;
+					cout<<endl<<"INSERISCI MATRICOLA DA ELIMINARE: ";
+					matricolaDaEliminare = leggiInt();
+					bool trovato = false;
+					for(int i = 0; i < MAX && !trovato; i++)
+					{
+						if(matricolaDaEliminare == s[i].getMatricola())
+						{
+							trovato = true;
+							cout<<endl<<"MATRICOLA TROVATA: ";
+							for(int j = i; j < MAX-1; j++)
+							{
+								s[j] = s[j+1];
+							}
+						}
+					}
+					if(trovato)
+					{
+						cout<<endl<<"MATRICOLA ELIMINATA"<<endl;
+					}
+					else
+					{
+						cout<<endl<<"MATRICOLA NON TROVATA"<<endl;
+					}
 				
 					
 				break;
@@ -145,4 +208,11 @@ void Menu::eseguiOperazione()
 		  system("cls");
 	}
 	
+}
+void swap(Studente *a, Studente *b)
+{
+	Studente temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }

@@ -4,7 +4,10 @@ int main()
 {
 	Menu m;
 	m.aggiungiVoce("INSERISCI STUDENTE");
-	m.aggiungiVoce("STAMPA STUDENTE");
+	m.aggiungiVoce("STAMPA ARRAY STUDENTE");
+	m.aggiungiVoce("ORDINA ARRAY STUDENTE");
+	m.aggiungiVoce("RICERCA STUDENTE");
+	m.aggiungiVoce("ELIMINA STUDENTE");
 	m.aggiungiVoce("ESCI DAL PROGRAMMA");
 	
 	do

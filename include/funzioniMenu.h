@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include "Studente.h"
+#define MAX 2
 using std::cin;
 using std::cout;
 using std::endl;
@@ -24,7 +25,9 @@ class Menu
 		string opzioni[10];			//VETTORE DELLE SCELTE
 		int numeroVoci;				//ATTRIBUTO PER NUMERO VOCI
 		int scelta;					//ATTRIBUTO PER MEMORIZZARE LA SCELTA ESEGUITA
-		Studente s;					//ATTRIBUTO PER MEMORIZZARE LO STUDENTE
+		Studente s[MAX];					//ATTRIBUTO PER MEMORIZZARE LO STUDENTE
 };
+
+void swap(Studente *a, Studente *b);
 
 #endif
